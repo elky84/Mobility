@@ -1,0 +1,27 @@
+### Taxies Register
+
+POST http://localhost:30000/Taxies/Register
+Content-Type: application/json
+
+{
+  "token": "a24743f4b09e46d89685f33cb9bdcd44",
+  "number": "62버2123",
+  "type": "K5",
+  "position": {
+    "n": 0,
+    "e": 0
+  }
+}
+
+### Calls Recieve
+
+PUT http://localhost:30000/Taxies/Position
+Content-Type: application/json
+
+{
+  "token": "a24743f4b09e46d89685f33cb9bdcd44",
+  "position": {
+    "n": 0,
+    "e": 0
+  }
+}

@@ -1,0 +1,38 @@
+### Calls Post
+
+POST http://localhost:30000/Calls
+Content-Type: application/json
+
+
+{
+  "token": "46eb84f296ec4281b296e6eaf6143cbe",
+  "position": {
+    "n": 0,
+    "e": 0
+  }
+}
+
+
+### Calls Get
+
+GET http://localhost:30000/Calls?Receivable=false&Page=0&Offset=20&Limit=20
+
+
+### Calls Recieve
+
+POST http://localhost:30000/Calls/Receive/4
+Content-Type: application/json
+
+{
+  "token": "a24743f4b09e46d89685f33cb9bdcd44"
+}
+
+
+### Calls Complete
+
+POST http://localhost:30000/Calls/Complete/3
+Content-Type: application/json
+
+{
+  "token": "a24743f4b09e46d89685f33cb9bdcd44"
+}

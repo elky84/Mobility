@@ -1,0 +1,54 @@
+### Members SignUp User
+
+POST http://localhost:30000/Members/SignUp
+Content-Type: application/json
+
+{
+  "email": "elky84@gmail.com",
+  "password": "1234",
+  "name": "김성훈",
+  "type": "User"
+}
+
+### Members SignUp Driver
+
+POST http://localhost:30000/Members/SignUp
+Content-Type: application/json
+
+{
+  "email": "elkykim@gmail.com",
+  "password": "1234",
+  "name": "김성훈_드라이버",
+  "type": "Driver"
+}
+
+### Members SignIn Valid
+
+POST http://localhost:30000/Members/SignIn
+Content-Type: application/json
+
+{
+  "email": "elky84@gmail.com",
+  "password": "1234"
+}
+
+
+### Members SignIn Invalid
+
+POST http://localhost:30000/Members/SignIn
+Content-Type: application/json
+
+{
+  "email": "elky84@gmail.com",
+  "password": "123"
+}
+
+### Members SignIn Invalid
+
+POST http://localhost:30000/Members/SignIn
+Content-Type: application/json
+
+{
+  "email": "elky83@gmail.com",
+  "password": "123"
+}
